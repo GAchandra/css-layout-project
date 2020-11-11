@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    width: 100%;
+    padding: 20px;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.green nav {
+    width: 100%;
+    list-style: none;
+}
+.green ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav-item {
+    font-family: sans-serif;
+    cursor: pointer;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul li.push {
+    margin-left: auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.container img {
+    max-height: 50vh;
+}
+.grid-wrapper {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-self: center;
+    align-self: center;
+}
+.box {
+    text-align: center;
+    width:100%;
+    padding: 50px;
+    background-color: rgb(39, 39, 39);
+}
+.box > img {
+    width: 50%;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 10vh;
+}
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+@media only screen and (max-width: 600px) {
+    .green ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        display: block;
+        text-align: center;
+    }
+    nav ul li.push {
+        margin-left: 0;
+    }
+} 
